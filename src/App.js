@@ -1,10 +1,13 @@
 import { WithdrawalMethod } from "./pages";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <WithdrawalMethod/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<WithdrawalMethod/>}/>
+      </Routes>
+    </Router>
   );
 }
 
