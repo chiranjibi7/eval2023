@@ -1,9 +1,10 @@
+import { WithdrawalMethod } from "./pages";
 
 function App() {
   return (
-    <div>
-      hi
-    </div>
+    <>
+      <WithdrawalMethod/>
+    </>
   );
 }
 
