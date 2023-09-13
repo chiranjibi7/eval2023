@@ -1,8 +1,12 @@
-import React ,{useState}from 'react';
+import React from 'react';
 import { CircularProgress } from '@mui/material';
+import {useDispatch,useSelector} from "react-redux";
+import { setCardNumber } from '../../features/card/cardSlice';
 
 function PaymentInput() {
-    const [card, setCard] = useState('')
+    const dispatch=useDispatch();
+    const {card}=useSelector(state=>state.card);
+    console.log(card)
 
     const handleCardDisplay = () => {
         const rawText = [...card.split(' ').join('')] // Remove old space
@@ -19,7 +23,7 @@ function PaymentInput() {
           <input
             className="w-full outline-none border-none rounded-xl bg-white p-4"
             value={handleCardDisplay()} 
-            onChange={(e) => setCard(e.target.value)}
+            onChange={(e) => dispatch(setCardNumber(e.target.value))}
           />
           {card!="" && <CircularProgress
             size={25}
