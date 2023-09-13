@@ -6,7 +6,6 @@ import { setCardNumber } from '../../features/card/cardSlice';
 function PaymentInput() {
     const dispatch=useDispatch();
     const {card}=useSelector(state=>state.card);
-    console.log(card)
 
     const handleCardDisplay = () => {
         const rawText = [...card.split(' ').join('')] // Remove old space

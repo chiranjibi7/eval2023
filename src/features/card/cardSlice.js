@@ -14,9 +14,7 @@ export const userCardInfo=createAsyncThunk('card/userCardInfo',
 
 const initialState={
     card:"",
-    name:"",
-    phone:"",
-    address:""
+    expiry:""
 };
 
 const cardSlice=createSlice({
@@ -25,9 +23,9 @@ const cardSlice=createSlice({
     reducers:{
       setCardNumber:(state,action)=>{
         state.card=action.payload;
-        state.name="Peter Pan";
-        state.phone= "+1 (437) 989-0360";
-        state.address = "31 Merganser Cres, Toronto, ON"
+      },
+      setExpiry:(state,action)=>{
+        state.expiry=action.payload;
       }
     },
     extraReducers:{
@@ -35,5 +33,5 @@ const cardSlice=createSlice({
     }
 });
 
-export const {setCardNumber}=cardSlice.actions;
+export const {setCardNumber,setExpiry}=cardSlice.actions;
 export default cardSlice.reducer;
