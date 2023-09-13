@@ -15,7 +15,7 @@ function WithdrawalMethod() {
        <main className='w-full h-screen flex flex-col bg-gray-100 p-5'>
             <p className='text-2xl text-center mt-5'>How would you like us to transfer your money?</p>
             <WithdrawalTypes/>
-            <div className='flex flex-col mt-9 gap-4'>
+            <div className='flex flex-col items-center mt-9 gap-4'>
                 <Button variant="contained" size='large' onClick={()=>navigate("/cardinfo")}>Continue</Button>
                 <Button variant="text" size="large">Cancel</Button>
             </div>
