@@ -1,11 +1,12 @@
-import { WithdrawalMethod } from "./pages";
+import { WithdrawalMethod,CardInformation } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<WithdrawalMethod/>}/>
+        <Route index element={<WithdrawalMethod/>}/>
+        <Route path="/cardinfo" element={<CardInformation/>}/>
       </Routes>
     </Router>
   );
