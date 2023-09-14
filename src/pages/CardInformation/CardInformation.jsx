@@ -28,7 +28,7 @@ function CardInformation() {
        }
     }
   return (
-    <div className='w-full'>
+    <div className='w-full bg-gray-100'>
         <header>
             <Header title="Card Information" path="/"/>
         </header>

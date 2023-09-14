@@ -17,7 +17,7 @@ const data=[
         icon:<TiTick size={25} color="blue"/>
     },
     {
-        image:"https://www.fin.gov.nt.ca/sites/fin/files/image_service/direct_deposit.png",
+        image:"https://images.squarespace-cdn.com/content/v1/5ace754bc258b4dd01b00432/1527697240603-TNRRXDRWCRUJBZGG4OKK/directDeposit.jpg?format=2500w",
         title:"Direct Deposit",
         description:"Withdraw directly to your bank account.",
         icon:<TiTick size={25} color="blue"/>
