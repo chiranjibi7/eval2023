@@ -19,7 +19,7 @@ function VisaCardContainer() {
         </div>
       </Paper>
       <div className='absolute bottom-40 left-15'>
-            <Button variant="contained" size='large'>Continue</Button>
+            <Button variant="contained" color="success" size='large'>Continue</Button>
        </div>
     </div>
   );

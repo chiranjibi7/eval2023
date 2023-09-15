@@ -16,7 +16,7 @@ function PaymentInput() {
         })
         return creditCard.join('') // Transform card array to string
     }
-    console.log(handleCardDisplay())
+
   return (
         <div className="w-full flex justify-start items-center relative">
           <input
