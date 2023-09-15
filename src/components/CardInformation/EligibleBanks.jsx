@@ -7,9 +7,9 @@ const imgData=["https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/TD_Canada_T
 
 function EligibleBanks() {
   return (
-    <div className='flex flex-col items-center mt-9'>
-        <p className='text-xl'>Eligible Banks</p>
-        <div className='flex items-center gap-3'>
+    <div className='flex flex-col items-center mt-9 md:gap-4'>
+        <p className='text-xl md:text-4xl'>Eligible Banks</p>
+        <div className='flex items-center gap-3 md:gap-8'>
             {imgData.map(image=>{
                 return <img src={image} height={50} width={50} key={image}/>
             })}

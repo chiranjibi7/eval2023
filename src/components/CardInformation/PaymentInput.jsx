@@ -18,15 +18,15 @@ function PaymentInput() {
     }
 
   return (
-        <div className="w-full flex justify-start items-center relative">
+        <div className="w-full flex justify-start md:justify-center items-center relative">
           <input
-            className="w-full outline-none border-none rounded-xl bg-white p-4"
+            className="w-full md:w-2/3 outline-none border-none rounded-xl bg-white p-4 md:p-8 md:text-2xl"
             value={handleCardDisplay()} 
             onChange={(e) => dispatch(setCardNumber(e.target.value))}
           />
           {card!="" && <CircularProgress
             size={25}
-            className="absolute right-3 cursor-pointer w-10"
+            className="absolute right-3 md:right-40 cursor-pointer w-10"
           />}
         </div>
   )
