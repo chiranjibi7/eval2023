@@ -26,9 +26,9 @@ const data=[
 
 function WithdrawalTypes() {
   return (
-    <div className='w-full mt-5 flex flex-col gap-6 p-2'>
+    <div className='w-full md:w-2/3 mt-5 flex flex-col md:self-center gap-6 md:gap-8 p-2'>
        <div className='w-full flex items-center justify-between'>
-        <p className='text-xl font-bold'>Method</p>
+        <p className='text-xl md:text-3xl font-bold'>Method</p>
         <AiOutlineQuestionCircle size={30} color='blue' />
        </div>  
        {data.map(item=>{

@@ -3,7 +3,7 @@ import {TiTickOutline} from "react-icons/ti";
 
 function VisaImageIcon() {
   return (
-    <div className="w-1/3 relative self-center">
+    <div className="w-1/3 md:w-auto relative self-center">
       <img
         className="block"
         height={100}

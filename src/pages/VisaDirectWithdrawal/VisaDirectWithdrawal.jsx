@@ -13,9 +13,9 @@ function VisaDirectWithdrawal() {
         </header>
         <main className='w-full h-screen flex flex-col bg-gray-100 p-5'>
             <VisaImageIcon/>
-            <div className=' w-full flex flex-col items-center gap-4 my-5'>
-              <p className='font-bold text-2xl'>Successful Transaction</p>
-              <p className='text-zinc-500 text-lg text-center'>Your Visa direct transaction has been successfully completed</p>
+            <div className=' w-full flex flex-col items-center gap-4 my-5 md:my-9'>
+              <p className='font-bold text-2xl md:text-4xl'>Successful Transaction</p>
+              <p className='text-zinc-500 text-lg text-center md:text-2xl'>Your Visa direct transaction has been successfully completed</p>
             </div>
             <AmountInfo/>
             <div className='mt-12 self-center'>

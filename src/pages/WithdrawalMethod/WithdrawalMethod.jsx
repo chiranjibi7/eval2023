@@ -13,7 +13,7 @@ function WithdrawalMethod() {
             <Header title="Withdrawal Method" path="/"/>
        </header>
        <main className='w-full h-screen flex flex-col bg-gray-100 p-5'>
-            <p className='text-2xl text-center mt-5'>How would you like us to transfer your money?</p>
+            <p className='text-xl md:text-5xl text-center mt-5 md:my-8'>How would you like us to transfer your money?</p>
             <WithdrawalTypes/>
             <div className='flex flex-col items-center mt-9 gap-4'>
                 <Button variant="contained" size='large' onClick={()=>navigate("/cardinfo")}>Continue</Button>
